@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "productive_offices",
+  "info": {
+    "singularName": "productive-office",
+    "pluralName": "productive-offices",
+    "displayName": "productive Office",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.content"
+    },
+    "element": {
+      "displayName": "element",
+      "type": "component",
+      "repeatable": true,
+      "component": "content.element"
+    },
+    "blog": {
+      "displayName": "blog",
+      "type": "component",
+      "repeatable": true,
+      "component": "content.blog"
+    }
+  }
+}

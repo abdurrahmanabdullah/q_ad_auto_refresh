@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "ip_telephone_services",
+  "info": {
+    "singularName": "ip-telephone-service",
+    "pluralName": "ip-telephone-services",
+    "displayName": "Ip Telephone Service",
+    "description": ""
+  },
+  "options": {"privateAttributes": ["id", "createdAt","updatedAt","publishedAt"],
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.content"
+    },
+    "feature": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.element"
+    },
+    "package": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.element"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navbar_menus",
+  "info": {
+    "singularName": "navbar-menu",
+    "pluralName": "navbar-menus",
+    "displayName": "navbar_menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    }
+  }
+}

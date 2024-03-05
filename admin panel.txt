@@ -1,0 +1,3 @@
+http://localhost:1337/admin/auth/register?registrationToken=de7871b23e12e26bb07b3dbe5e2fbc44cfc049c6
+
+Admin@017

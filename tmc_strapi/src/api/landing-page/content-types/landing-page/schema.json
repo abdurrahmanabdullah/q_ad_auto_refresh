@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landing_pages",
+  "info": {
+    "singularName": "landing-page",
+    "pluralName": "landing-pages",
+    "displayName": "Landing Page",
+    "description": ""
+  },
+  "options": {"privateAttributes": ["id", "createdAt","updatedAt","publishedAt"],
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "hero": {
+      "displayName": "Hero",
+      "type": "component",
+      "repeatable": false,
+      "component": "content.hero"
+    },
+    "content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.content"
+    },
+    "card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "card-content.card"
+    },
+    "hero1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.hero"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "footer": {
+      "type": "string"
+    }
+  }
+}

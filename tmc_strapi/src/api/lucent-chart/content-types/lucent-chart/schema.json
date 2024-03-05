@@ -1,0 +1,68 @@
+{
+  "kind": "singleType",
+  "collectionName": "lucent_charts",
+  "info": {
+    "singularName": "lucent-chart",
+    "pluralName": "lucent-charts",
+    "displayName": "lucentChart",
+    "description": ""
+  },
+  "options": {"privateAttributes": ["id", "createdAt","updatedAt","publishedAt"],
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "heading": {
+      "type": "text"
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files",
+        "videos",
+        "images",
+        "audios"
+      ]
+    },
+    "element1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.content"
+    },
+    "element2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.element"
+    },
+    "conclusionPart": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "introductionpart": {
+      "type": "string"
+    },
+    "footer": {
+      "type": "string"
+    }
+  }
+}
